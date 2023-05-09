@@ -1,0 +1,14 @@
+local Allowed = {"PK_Expert"}
+local function load(Player)
+    for a, allowed in pairs(Allowed) do
+	    	if allowed == Player then
+		      	return true
+		    end
+	  end
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+    if load(Player.Name) then
+    
+    end
+end)
