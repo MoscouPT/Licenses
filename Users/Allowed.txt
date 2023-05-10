@@ -44,3 +44,4 @@ game:GetService("Players").PlayerAdded:Connect(function(Player)
 		Denied()
 	end
 end)
+
